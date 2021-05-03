@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+
+  /* Neutral */
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
