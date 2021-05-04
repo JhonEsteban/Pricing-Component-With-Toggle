@@ -13,6 +13,56 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <h1>Pricing Component<</h1>
+    <main>
+      <div class="wrapper">
+        <section class="plans-toggle">
+          <h1>Our Princing</h1>
+          <span>Annually</span>
+          <button>Toggle</button>
+          <span>Monthly</span>
+        </section>
+
+        <div class="plans__container">
+          <article class="plan basic-plan">
+            <h2 class="plan__name">Basic</h2>
+            <p class="plan__price"><span>199.99</span></p>
+
+            <div class="information">
+              <p class="information__storage">500 GB Storage</p>
+              <p class="information__users">2 users Allowed</p>
+              <p class="information__shipping">Send up to 3 GB</p>
+            </div>
+
+            <button class="plan__button">Learn More</button>
+          </article>
+
+          <article class="plan professional-plan">
+            <h2 class="plan__name">Professional</h2>
+            <p class="plan__price"><span>249.99</span></p>
+
+            <div class="information">
+              <p class="information__storage">1 TB Storage</p>
+              <p class="information__users">5 users Allowed</p>
+              <p class="information__shipping">Send up to 10 GB</p>
+            </div>
+
+            <button class="plan__button">Learn More</button>
+          </article>
+
+          <article class="plan master-plan">
+            <h2 class="plan__name">Master</h2>
+            <p class="plan__price"><span>399.99</span></p>
+
+            <div class="information">
+              <p class="information__storage">2 TB Storage</p>
+              <p class="information__users">10 users Allowed</p>
+              <p class="information__shipping">Send up to 20 GB</p>
+            </div>
+
+            <button class="plan__button">Learn More</button>
+          </article>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
