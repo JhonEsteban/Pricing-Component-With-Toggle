@@ -46,7 +46,54 @@ img {
 
 .plans-toggle {
   text-align: center;
-  margin-top: 30px;
+  margin: 30px auto 50px;
+}
+
+.plans-toggle__title,
+.annually-plan,
+.monthly-plan {
+  color: var(--Grayish-Blue);
+}
+.plans-toggle__title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.plans-toggle__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  width: 48px;
+  height: 27px;
+  margin: 0 15px;
+  appearance: none;
+  background: linear-gradient(var(--Linear-Gradient));
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+input:checked[type='checkbox'] {
+  background: linear-gradient(var(--Linear-Gradient));
+}
+
+input[type='checkbox']::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border-radius: 50%;
+  top: 3px;
+  left: 5px;
+  transition: left 0.3s;
+}
+
+input:checked[type='checkbox']::before {
+  left: 23px;
 }
 
 .plans__container {
