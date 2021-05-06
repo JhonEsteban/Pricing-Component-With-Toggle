@@ -19,7 +19,7 @@
           <h1 class="plans-toggle__title">Our Princing</h1>
           <div class="plans-toggle__container">
             <span class="annually-plan">Annually</span>
-            <input type="checkbox" />
+            <input type="checkbox" id="checkbox" />
             <span class="monthly-plan">Monthly</span>
           </div>
         </section>
@@ -27,7 +27,7 @@
         <div class="plans__container">
           <article class="plan basic-plan">
             <h2 class="plan__name">Basic</h2>
-            <p class="plan__price"><span>199.99</span></p>
+            <p class="plan__price"><span id="basicPrice"></span></p>
 
             <div class="information">
               <p class="information__storage">500 GB Storage</p>
@@ -40,7 +40,9 @@
 
           <article class="plan professional-plan">
             <h2 class="plan__name">Professional</h2>
-            <p class="plan__price"><span>249.99</span></p>
+            <p class="plan__price">
+              <span id="professionalPrice"></span>
+            </p>
 
             <div class="information">
               <p class="information__storage">1 TB Storage</p>
@@ -53,7 +55,7 @@
 
           <article class="plan master-plan">
             <h2 class="plan__name">Master</h2>
-            <p class="plan__price"><span>399.99</span></p>
+            <p class="plan__price"><span id="masterPrice"></span></p>
 
             <div class="information">
               <p class="information__storage">2 TB Storage</p>
@@ -66,5 +68,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
