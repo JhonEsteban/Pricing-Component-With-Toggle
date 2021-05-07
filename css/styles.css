@@ -73,6 +73,7 @@ input[type='checkbox'] {
   appearance: none;
   background: linear-gradient(var(--Linear-Gradient));
   border-radius: 30px;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -97,13 +98,16 @@ input:checked[type='checkbox']::before {
 }
 
 .plans__container {
+  max-width: 880px;
+  margin: auto;
   display: grid;
   row-gap: 25px;
-  margin: 30px auto 40px;
 }
 
 .plan {
-  max-width: 290px;
+  margin: auto;
+  min-width: 290px;
+  max-width: 295px;
   padding: 25px 15px;
   background-color: var(--white);
   box-shadow: 0 0 5px 1px #e7e7e7;
@@ -167,4 +171,33 @@ input:checked[type='checkbox']::before {
 .information__users {
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
+}
+
+@media screen and (min-width: 660px) {
+  .plans__container {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    column-gap: 4px;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .plans__container {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 300px));
+    grid-template-rows: 25px 1fr;
+    column-gap: 8px;
+  }
+
+  .basic-plan {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .professional-plan {
+    grid-column: 2 / 3;
+  }
+
+  .master-plan {
+    grid-column: 3 / -1;
+    grid-row: 2 / 3;
+  }
 }
