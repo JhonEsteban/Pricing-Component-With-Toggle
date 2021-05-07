@@ -1,5 +1,7 @@
 import changePlans from './changePlans.js';
 
+const checkbox = document.getElementById('checkbox');
+
 const getCheckboxState = () => {
   if (localStorage.getItem('checkboxState')) {
     checkbox.checked = JSON.parse(localStorage.getItem('checkboxState'));
